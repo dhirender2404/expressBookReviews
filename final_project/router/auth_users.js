@@ -13,7 +13,7 @@ const isValid = (username) => {
 // Check if username & password match existing user
 const authenticatedUser = (username, password) => {
   return users.some(user => user.username === username && user.password === password);
-};np
+};
 
 //only registered users can login
 regd_users.post("/login", (req,res) => {
